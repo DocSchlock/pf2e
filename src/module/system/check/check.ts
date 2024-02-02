@@ -469,7 +469,7 @@ class CheckPF2e {
         if (heroPoint) context.options.push("check:hero-point");
 
         // if the request turned to blind mode, set the context rollMode as blind
-        if(makeBlind) context.rollMode = 'blindroll';
+        if (makeBlind) context.rollMode = "blindroll";
 
         const oldRoll = message.rolls.at(0);
         if (!(oldRoll instanceof CheckRoll)) throw ErrorPF2e("Unexpected error retrieving prior roll");
