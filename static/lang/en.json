@@ -1163,7 +1163,17 @@
                     "Exceptions4DoubleVs1": "{type} {value} (except {exception1}, {exception2}, {exception3}, or {exception4}; double resistance vs. {doubleVs1})",
                     "Exceptions4DoubleVs2": "{type} {value} (except {exception1}, {exception2}, {exception3}, or {exception4}; double resistance vs. {doubleVs1} or {doubleVs2})",
                     "Exceptions4DoubleVs3": "{type} {value} (except {exception1}, {exception2}, {exception3}, or {exception4}; double resistance vs. {doubleVs1}, {doubleVs2}, or {doubleVs3})",
-                    "Exceptions4DoubleVs4": "{type} {value} (except {exception1}, {exception2}, {exception3}, or {exception4}; double resistance vs. {doubleVs1}, {doubleVs2}, {doubleVs3}, or {doubleVs4})"
+                    "Exceptions4DoubleVs4": "{type} {value} (except {exception1}, {exception2}, {exception3}, or {exception4}; double resistance vs. {doubleVs1}, {doubleVs2}, {doubleVs3}, or {doubleVs4})",
+                    "Exceptions5DoubleVs0": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, or {exception5})",
+                    "Exceptions5DoubleVs1": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, or {exception5}; double resistance vs. {doubleVs1})",
+                    "Exceptions5DoubleVs2": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, or {exception5}; double resistance vs. {doubleVs1} or {doubleVs2})",
+                    "Exceptions5DoubleVs3": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, or {exception5}; double resistance vs. {doubleVs1}, {doubleVs2}, or {doubleVs3})",
+                    "Exceptions5DoubleVs4": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, or {exception5}; double resistance vs. {doubleVs1}, {doubleVs2}, {doubleVs3}, or {doubleVs4})",
+                    "Exceptions6DoubleVs0": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, {exception5}, or {exception6})",
+                    "Exceptions6DoubleVs1": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, {exception5}, or {exception6}; double resistance vs. {doubleVs1})",
+                    "Exceptions6DoubleVs2": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, {exception5}, or {exception6}; double resistance vs. {doubleVs1} or {doubleVs2})",
+                    "Exceptions6DoubleVs3": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, {exception5}, or {exception6}; double resistance vs. {doubleVs1}, {doubleVs2}, or {doubleVs3})",
+                    "Exceptions6DoubleVs4": "{type} {value} (except {exception1}, {exception2}, {exception3}, {exception4}, {exception5}, or {exception6}; double resistance vs. {doubleVs1}, {doubleVs2}, {doubleVs3}, or {doubleVs4})"
                 },
                 "Type": {
                     "abysium": "abysium",
