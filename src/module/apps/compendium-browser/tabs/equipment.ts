@@ -27,6 +27,7 @@ export class CompendiumBrowserEquipmentTab extends CompendiumBrowserTab {
         "traits",
         "rarity",
         "source",
+        "description",
     ];
 
     #localizeCoins = localizer("PF2E.CurrencyAbbreviations");
@@ -45,7 +46,7 @@ export class CompendiumBrowserEquipmentTab extends CompendiumBrowserTab {
         const itemTypes = ["weapon", "shield", "armor", "equipment", "consumable", "treasure", "backpack", "kit"];
         // Define index fields for different types of equipment
 
-        const baseFields = ["img", "system.price", "system.traits", "system.publication", "system.source"];
+        const baseFields = ["img", "system.price", "system.traits", "system.publication", "system.source", "system.description"];
         const physicalItemFields = [...baseFields, "system.level.value"];
         const runedItemFields = [...physicalItemFields, "system.runes"];
         const armorAndWeaponFields = [...runedItemFields, "system.category", "system.group"];
@@ -93,6 +94,9 @@ export class CompendiumBrowserEquipmentTab extends CompendiumBrowserTab {
                     const sourceSlug = sluggify(pubSource);
                     if (pubSource) publications.add(pubSource);
 
+                    // get description
+                    const itemDescription = system.description?.value ?? "";
+
                     // Infer magical trait from runes
                     const traits = itemData.system.traits.value ?? [];
                     const runes = itemData.system.runes;
@@ -119,6 +123,7 @@ export class CompendiumBrowserEquipmentTab extends CompendiumBrowserTab {
                         traits: R.unique(itemData.system.traits.value),
                         rarity: itemData.system.traits.rarity,
                         source: sourceSlug,
+                        description: itemDescription,
                     });
                 }
             }

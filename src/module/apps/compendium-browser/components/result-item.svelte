@@ -4,7 +4,7 @@
     import { getSelectedActors } from "@util/token-actor-utils.ts";
     import type { Rarity } from "@module/data.ts";
     import type { CompendiumBrowserIndexData } from "../tabs/data.ts";
-    import type { KitPF2e, PhysicalItemPF2e } from "@item";
+    import { ItemPF2e, type KitPF2e, type PhysicalItemPF2e } from "@item";
     import type { ContentTabName } from "../data.ts";
 
     const props: { activeTabName: ContentTabName | ""; entry: CompendiumBrowserIndexData } = $props();
@@ -159,7 +159,7 @@
         <img src={entry.img} alt={entry.name} loading="lazy" />
     </div>
     <div class="name">
-        <button class="flat result-link" onclick={() => onClickButton(entry.uuid, "open-sheet")}>{entry.name}</button>
+        <button class="flat result-link" data-tooltip={entry.description} onclick={() => onClickButton(entry.uuid, "open-sheet")}>{entry.name}</button>
         {#if entry.actionGlyph}<span class="action-glyph">{entry.actionGlyph}</span>{/if}
     </div>
     {#if entry.rarity}
