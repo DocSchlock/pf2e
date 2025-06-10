@@ -79,12 +79,16 @@
         <span class="hit-points">
             {{#with data.attributes.hp as |hp|}}
                 <input
-                    type="number"
+                    type="text"
                     name="system.attributes.hp.value"
                     class="current"
                     id="{{../document.uuid}}-hp"
                     value="{{hp.value}}"
                     placeholder="0"
+                    data-dtype="Number" 
+                    data-allow-delta 
+                    data-min="0"
+                    data-max="{{hp.max}}"
                 />
                 <span class="slash">/</span>
                 <input
@@ -104,11 +108,14 @@
             <label for="{{document.uuid}}-temp-hp">{{localize "PF2E.RuleElement.TempHPShortLabel"}}</label>
             <input
                 class="hp-temp-value"
-                type="number"
+                type="text"
                 name="system.attributes.hp.temp"
                 id="{{document.uuid}}-temp-hp"
                 value="{{data.attributes.hp.temp}}"
                 placeholder="0"
+                data-dtype="Number" 
+                data-allow-delta 
+                data-min="0"
             />
         </div>
     </div>

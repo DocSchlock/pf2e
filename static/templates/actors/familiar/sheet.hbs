@@ -87,9 +87,12 @@
             <h4>{{localize "PF2E.HitPointsHeader"}}</h4>
         </div>
         <div class="value">
-            <input class="current-hp" id="{{actor.id}}-hit-points" type="number"
-                name="system.attributes.hp.value" value="{{data.attributes.hp.value}}" class="current-hp"
-                data-dtype="Number" />
+            <input class="current-hp" id="{{actor.id}}-hit-points" type="text"
+                name="system.attributes.hp.value" value="{{data.attributes.hp.value}}" class="current-hp" 
+                    data-dtype="Number" 
+                    data-allow-delta 
+                    data-min="0"
+                    data-max="{{data.attributes.hp.max}}" />
             <div>/ </div>
             <div class="total-hp" data-tooltip="{{data.attributes.hp.breakdown}}">{{data.attributes.hp.max}}</div>
             <div class="temp-hp">
