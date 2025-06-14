@@ -1,4 +1,7 @@
 <section class="tab proficiencies major" data-group="primary" data-tab="proficiencies">
+    <div class="toggles section-container headerless">
+        {{#if toggles.proficiencies}}{{> "systems/pf2e/templates/actors/partials/toggles.hbs" toggles=toggles.proficiencies}}{{/if}}
+    </div>
     <header>{{localize "PF2E.CoreSkillsHeader"}}</header>
     <ul class="proficiencies-list">
         {{!-- Core Skills --}}

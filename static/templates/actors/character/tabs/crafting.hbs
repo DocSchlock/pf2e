@@ -1,4 +1,7 @@
 <div class="tab crafting crafting-pane" data-group="primary" data-tab="crafting">
+    <div class="toggles section-container headerless">
+        {{#if toggles.crafting}}{{> "systems/pf2e/templates/actors/partials/toggles.hbs" toggles=toggles.crafting}}{{/if}}
+    </div>
     {{#if crafting.hasQuickAlchemy}}
         <div class="crafting-options item-list">
             <div class="crafting-option item" data-toggle-property="{{toggle.inputName}}" data-toggle-label="{{localize toggle.label}}">

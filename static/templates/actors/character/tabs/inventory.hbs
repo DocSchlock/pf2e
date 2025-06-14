@@ -1,5 +1,8 @@
 <div class="tab inventory item-container" data-group="primary" data-tab="inventory">
     {{> "systems/pf2e/templates/actors/partials/coinage.hbs"}}
+    <div class="toggles section-container headerless">
+        {{#if toggles.inventory}}{{> "systems/pf2e/templates/actors/partials/toggles.hbs" toggles=toggles.inventory}}{{/if}}
+    </div>
     {{> "systems/pf2e/templates/actors/partials/inventory-header.hbs"}}
     {{> "systems/pf2e/templates/actors/partials/inventory.hbs"}}
     {{> "systems/pf2e/templates/actors/partials/encumbrance.hbs"}}
