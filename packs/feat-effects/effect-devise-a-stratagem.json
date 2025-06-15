@@ -137,7 +137,8 @@
                     "will"
                 ],
                 "type": "circumstance",
-                "value": 1
+                "value": 1,
+                "hideIfDisabled": true
             }
         ],
         "start": {
