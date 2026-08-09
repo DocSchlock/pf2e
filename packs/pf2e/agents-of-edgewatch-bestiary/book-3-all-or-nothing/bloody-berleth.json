@@ -101,6 +101,7 @@
             "name": "+1 Striking Shovel",
             "sort": 200000,
             "system": {
+                "ammo": null,
                 "baseItem": "scythe",
                 "bonus": {
                     "value": 0
@@ -127,6 +128,7 @@
                     "invested": null
                 },
                 "expend": null,
+                "grade": null,
                 "group": "polearm",
                 "hardness": 0,
                 "hp": {
@@ -158,7 +160,9 @@
                 "rules": [],
                 "runes": {
                     "potency": 1,
-                    "property": [],
+                    "property": {
+                        "0": ""
+                    },
                     "striking": 1
                 },
                 "size": "med",
@@ -170,7 +174,8 @@
                     "rarity": "common",
                     "value": [
                         "deadly-d10",
-                        "trip"
+                        "trip",
+                        "versatile-b"
                     ]
                 },
                 "usage": {
@@ -309,9 +314,11 @@
                 "dexCap": 1,
                 "equipped": {
                     "carryType": "worn",
-                    "inSlot": false,
+                    "handsHeld": 0,
+                    "inSlot": true,
                     "invested": null
                 },
+                "grade": null,
                 "group": "chain",
                 "hardness": 0,
                 "hp": {
@@ -338,7 +345,7 @@
                 "quantity": 1,
                 "rules": [],
                 "runes": {
-                    "potency": 0,
+                    "potency": 1,
                     "property": [],
                     "resilient": 0
                 },
@@ -726,7 +733,8 @@
                     "value": [
                         "deadly-d10",
                         "magical",
-                        "trip"
+                        "trip",
+                        "versatile-b"
                     ]
                 }
             },
@@ -796,7 +804,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> Berleth has just used his shovel to Trip a creature</p>\n<hr />\n<p><strong>Effect</strong> Berleth brutally brings his shovel down on the prone foe, making a shovel Strike. On a hit, the Strike deals damage as normal, plus the target must make a @Check[fortitude|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2} and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 minute.</p>"
+                    "value": "<p><strong>Requirements</strong> Berleth has just used his shovel to Trip a creature</p><hr /><p><strong>Effect</strong> Berleth brutally brings his shovel down on the prone foe, making a shovel Strike. On a hit, the Strike deals damage as normal, plus the target must make a @Check[fortitude|dc:30|options:inflicts:stunned,inflicts:clumsy] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 2} and @UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1} for 1 minute.</p>"
                 },
                 "publication": {
                     "license": "OGL",

@@ -28,6 +28,9 @@
                     "title": ""
                 },
                 "rules": [],
+                "showSlotlessLevels": {
+                    "value": false
+                },
                 "slots": {},
                 "slug": null,
                 "spelldc": {
@@ -38,7 +41,8 @@
                 },
                 "tradition": {
                     "value": "primal"
-                }
+                },
+                "traits": {}
             },
             "type": "spellcastingEntry"
         },
@@ -809,6 +813,7 @@
             "name": "+1 Striking Dagger",
             "sort": 1300000,
             "system": {
+                "ammo": null,
                 "baseItem": "dagger",
                 "bonus": {
                     "value": 0
@@ -835,6 +840,7 @@
                     "invested": null
                 },
                 "expend": null,
+                "grade": null,
                 "group": "knife",
                 "hardness": 0,
                 "hp": {
@@ -1216,7 +1222,8 @@
                     "title": ""
                 },
                 "rules": [],
-                "slug": null
+                "slug": null,
+                "traits": {}
             },
             "type": "lore"
         }
@@ -1269,7 +1276,14 @@
                     }
                 ],
                 "value": 20
-            }
+            },
+            "weaknesses": [
+                {
+                    "exceptions": [],
+                    "type": "cold-iron",
+                    "value": 8
+                }
+            ]
         },
         "details": {
             "blurb": "",
@@ -1330,13 +1344,19 @@
             },
             "athletics": {
                 "base": 14,
-                "note": "or Swim",
                 "special": [
                     {
                         "base": 16,
                         "label": "to Climb",
                         "predicate": [
                             "action:climb"
+                        ]
+                    },
+                    {
+                        "base": 16,
+                        "label": "to Swim",
+                        "predicate": [
+                            "action:swim"
                         ]
                     }
                 ]

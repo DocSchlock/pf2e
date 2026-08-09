@@ -117,7 +117,7 @@
                 "damageRolls": {
                     "0": {
                         "damage": "2d6+10",
-                        "damageType": "acid"
+                        "damageType": "bludgeoning"
                     }
                 },
                 "description": {
@@ -507,6 +507,12 @@
                         ]
                     }
                 ]
+            },
+            "stealth": {
+                "base": 19
+            },
+            "survival": {
+                "base": 17
             }
         },
         "traits": {
