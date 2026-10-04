@@ -287,9 +287,11 @@
                 "dexCap": 2,
                 "equipped": {
                     "carryType": "worn",
-                    "inSlot": false,
+                    "handsHeld": 0,
+                    "inSlot": true,
                     "invested": null
                 },
+                "grade": null,
                 "group": "composite",
                 "hardness": 0,
                 "hp": {
